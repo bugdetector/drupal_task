@@ -3,7 +3,6 @@
 namespace Drupal\drupal_task_api\Plugin\rest\resource;
 
 use Drupal\rest\ResourceResponse;
-use GuzzleHttp\Client;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
 /**
@@ -19,8 +18,6 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 class GetOnlineCountriesResource extends ApiResourceAbstract
 {
 
-    protected $apiUrl = "https://restcountries.com/v3.1/all";
-
     /**
      * Responds to GET request.
      * Returns a list of taxonomy terms.
@@ -34,16 +31,7 @@ class GetOnlineCountriesResource extends ApiResourceAbstract
         if (!$this->loggedUser->hasPermission('access content')) {
             throw new AccessDeniedHttpException();
         }
-        $client = new Client();
-        /**
-         * @var \Psr\Http\Message\StreamInterface
-         */
-        $apiResponse = $client->get($this->apiUrl)->getBody();
-        $result = array_map(function($country){
-            return [
-                "name" => $country["name"]["common"]
-            ];
-        }, json_decode($apiResponse->__toString(), true));
+        $result = $this->getOnlineCountries();
         $response = new ResourceResponse($result);
         $response->addCacheableDependency($result);
         return $response;

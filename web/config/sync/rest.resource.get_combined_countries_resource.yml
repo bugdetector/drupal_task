@@ -1,0 +1,19 @@
+uuid: c5f835fa-3082-4397-805b-0e9bee100495
+langcode: tr
+status: true
+dependencies:
+  module:
+    - drupal_task_api
+    - serialization
+    - user
+id: get_combined_countries_resource
+plugin_id: get_combined_countries_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+    - xml
+  authentication:
+    - cookie

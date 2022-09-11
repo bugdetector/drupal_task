@@ -30,17 +30,10 @@ class ContinentResource extends ApiResourceAbstract
         if (!$this->loggedUser->hasPermission('access content')) {
             throw new AccessDeniedHttpException();
         }
-        $vid = 'continents';
-        $terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree($vid);
-        foreach ($terms as $term) {
-            $term_result[] = array(
-                'id' => $term->tid,
-                'name' => $term->name
-            );
-        }
+        $terms = $this->getTermList('continents');
 
-        $response = new ResourceResponse($term_result);
-        $response->addCacheableDependency($term_result);
+        $response = new ResourceResponse($terms);
+        $response->addCacheableDependency($terms);
         return $response;
     }
 }

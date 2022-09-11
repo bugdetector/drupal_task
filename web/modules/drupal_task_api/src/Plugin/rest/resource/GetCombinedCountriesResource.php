@@ -8,15 +8,16 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 /**
  * Provides a resource to get view modes by entity and bundle.
  * @RestResource(
- *   id = "country_resource",
- *   label = @Translation("Get Drupal Countries"),
+ *   id = "get_combined_countries_resource",
+ *   label = @Translation("Get Combined Countries"),
  *   uri_paths = {
- *     "canonical" = "/getDrupalCountries"
+ *     "canonical" = "/getCombineCountries"
  *   }
  * )
  */
-class CountriesResource extends ApiResourceAbstract
+class GetCombinedCountriesResource extends ApiResourceAbstract
 {
+
     /**
      * Responds to GET request.
      * Returns a list of taxonomy terms.
@@ -30,10 +31,13 @@ class CountriesResource extends ApiResourceAbstract
         if (!$this->loggedUser->hasPermission('access content')) {
             throw new AccessDeniedHttpException();
         }
-        $terms = $this->getTermList('countries');
-
-        $response = new ResourceResponse($terms);
-        $response->addCacheableDependency($terms);
+        
+        $result = array_merge(
+            $this->getTermList("countries"),
+            $this->getOnlineCountries()
+        );
+        $response = new ResourceResponse($result);
+        $response->addCacheableDependency($result);
         return $response;
     }
 }
