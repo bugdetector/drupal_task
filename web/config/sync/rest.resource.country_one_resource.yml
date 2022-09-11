@@ -1,0 +1,19 @@
+uuid: 4fc7ffb6-dece-48ca-a4bb-8c7d1c03595b
+langcode: tr
+status: true
+dependencies:
+  module:
+    - drupal_task_api
+    - serialization
+    - user
+id: country_one_resource
+plugin_id: country_one_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+    - xml
+  authentication:
+    - cookie
