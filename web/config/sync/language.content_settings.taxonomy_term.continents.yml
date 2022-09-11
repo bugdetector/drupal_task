@@ -1,0 +1,11 @@
+uuid: ae034777-da4d-4af8-a73f-2a35ec36d037
+langcode: tr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.continents
+id: taxonomy_term.continents
+target_entity_type_id: taxonomy_term
+target_bundle: continents
+default_langcode: site_default
+language_alterable: false

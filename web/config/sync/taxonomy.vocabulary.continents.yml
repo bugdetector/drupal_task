@@ -1,0 +1,8 @@
+uuid: 065b3e34-8bc5-4f36-bd99-33ac62f9bf56
+langcode: tr
+status: true
+dependencies: {  }
+name: Continents
+vid: continents
+description: 'Continent list'
+weight: 0
