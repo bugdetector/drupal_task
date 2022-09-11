@@ -1,0 +1,19 @@
+uuid: 1fe75aec-d3cb-44c4-af88-613b0d0bea1b
+langcode: tr
+status: true
+dependencies:
+  module:
+    - drupal_task_api
+    - serialization
+    - user
+id: continent_resource
+plugin_id: continent_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+    - xml
+  authentication:
+    - cookie

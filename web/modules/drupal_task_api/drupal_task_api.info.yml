@@ -1,0 +1,5 @@
+name: Drupal Task Api Services
+type: module
+description: Module for implementing Continent and Country Rest Services.
+core_version_requirement: ^8.8 || ^9
+package: drupal_task
