@@ -1,0 +1,10 @@
+uuid: 0fe775c9-31da-43b4-a45e-b81e92df75f7
+langcode: tr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zglzjmYxi0G0ag9MZ02y0LSJOdpWRwJxyP_OvFojFyo
+id: basic
+label: 'Temel blok'
+revision: 0
+description: 'Bir temel blok, bir başlık ve metinden oluşur.'

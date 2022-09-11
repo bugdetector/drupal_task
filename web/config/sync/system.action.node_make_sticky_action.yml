@@ -1,0 +1,13 @@
+uuid: 828e488d-7ca3-4a3f-8ade-b1bacd2806e8
+langcode: tr
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: sOb26JSy3fGpWkvR0WYN6_hMqj_6d1rvbvrkzp1yya0
+id: node_make_sticky_action
+label: 'İçeriği kalıcı yap'
+type: node
+plugin: node_make_sticky_action
+configuration: {  }

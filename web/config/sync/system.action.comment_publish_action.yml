@@ -1,0 +1,13 @@
+uuid: 1147f1dc-61e1-4cb0-b065-cc815790c937
+langcode: tr
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: C00dyL_W_5M0nFlgUB3lWUTUs96jn51Jw1MLHVEHZD0
+id: comment_publish_action
+label: 'Yorumu yayınla'
+type: comment
+plugin: 'entity:publish_action:comment'
+configuration: {  }

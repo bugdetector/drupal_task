@@ -1,0 +1,10 @@
+uuid: c8f628aa-55bc-413a-8f10-c02ff7765e7a
+langcode: tr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7klS5IWXrwzVaPpYZFAs6wcx8U2FF1X73OfrtTsvuvE
+id: fallback
+label: 'Yedek tarih biçimi'
+locked: true
+pattern: 'D, m/d/Y - H:i'

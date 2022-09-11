@@ -1,0 +1,9 @@
+uuid: 5f3b7124-9e30-4ec8-a468-9f4e0138dd9f
+langcode: tr
+status: true
+dependencies: {  }
+id: tr
+label: Turkish
+direction: ltr
+weight: 0
+locked: false

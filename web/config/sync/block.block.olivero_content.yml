@@ -1,0 +1,22 @@
+uuid: 58b8310d-517b-4f53-a57c-bca7129dafc3
+langcode: tr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: olivero_content
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Ana sayfa içeriği'
+  label_display: '0'
+  provider: system
+visibility: {  }

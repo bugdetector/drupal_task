@@ -1,0 +1,13 @@
+uuid: 8ee9cc7c-77da-4562-96de-455dabe11956
+langcode: tr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
+name: Makale
+type: article
+description: '<em>Makale</em>leri haber, basın açıklaması, ağ günlüğü (blog) gönderisi gibi zamana duyarlı içerikler için kullanın.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

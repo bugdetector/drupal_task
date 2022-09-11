@@ -1,0 +1,55 @@
+uuid: c961a812-d7a3-411f-9e86-425a5da408e2
+langcode: tr
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: Okz8QMYRGvq95nqLGYjp8gLiy93DKoMEzEVZVwEeg4M
+id: language
+label: Dil
+module: language
+routes:
+  -
+    route_name: entity.configurable_language.collection
+tips:
+  language-overview:
+    id: language-overview
+    plugin: text
+    label: Diller
+    weight: 1
+    body: '<p>"Diller" sayfası site dillerini ekleme, düzenleme, silme ve sıralama işlemlerini yapmanıza olanak sağlar.</p>'
+  language-add:
+    id: language-add
+    plugin: text
+    label: 'Diller ekleniyor'
+    weight: 2
+    selector: .button-action
+    body: '<p>Sitenize başka diller eklemek için "Dil ekle" düğmesine tıklayın.</p><p>Eklenen diller dil listesinde görüntülenir ve düzenlenip silinebilir.</p>'
+  language-reorder:
+    id: language-reorder
+    plugin: text
+    label: 'Dil sıralamasını değiştirmek'
+    weight: 3
+    selector: .draggable
+    body: '<p>Sitedeki dillerin sıralamasını değiştirmek için her dilin başındaki sürükleme simgelerine tıklayıp dili sürükleyin.</p><p>Burada görüntülenen sıralama Arayüz Çevirisi ve İçerik Çeviri Eklentilerindeki dil değiştirici blokları tarafından kullanılır.</p><p>Dilleri sıraladıktan sonra yaptığınız değişikliklerin geçerli olması için "Ayarları Kaydet" düğmesine tıklayın.</p>'
+  language-default:
+    id: language-default
+    plugin: text
+    label: 'Bir dili varsayılan olarak atamak'
+    weight: 4
+    selector: .js-form-item-site-default-language
+    body: '<p>Sitede kullanılan varsayılan dili değiştirmek için yapılandırılmış dillerden birini varsayılan olarak atayabilirsiniz. Dil seçimi yapılmayan durumlarda site varsayılan dilde görüntülenir.</p>'
+  language-operations:
+    id: language-operations
+    plugin: text
+    label: 'Dilleri düzenlemek'
+    weight: 5
+    selector: .dropbutton-wrapper
+    body: '<p>Dil düzenleme ve silme işlemleri yapabilirsiniz.</p><p>Dilin adını ve yönünü değiştirebilirsiniz.</p><p>Silinen diller daha sonra yeniden eklenebilir. Bir dil silindiğinde o dildeki tüm arayüz çevirileri silinir ve bu dildeki tüm içerik nötr olarak ayarlanır. Varsayılan site dilinin silinemeyeceğini unutmayın.</p>'
+  language-continue:
+    id: language-continue
+    plugin: text
+    label: 'Devam ediliyor'
+    weight: 6
+    body: '<p>Diller sayfası hakkında özet bilgileri aldığınıza göre şimdi şu işlemleri yapabilirsiniz:<ul><li><a href="[site:url]admin/config/regional/language/add">Dil ekleme</a></li><li>Dilleri yeniden sıralama</li><li>Dil düzenleme/li><li>Dil silme</li></ul></p>'

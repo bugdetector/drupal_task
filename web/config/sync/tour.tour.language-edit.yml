@@ -1,0 +1,48 @@
+uuid: 5a1bb90b-42e9-4d5d-b43c-6bf5d25f1238
+langcode: tr
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: gjYvYwMqulNsq7VmScWKOqEUxar9AX0TvG8vfCCguUQ
+id: language-edit
+label: 'Diller Düzenleniyor'
+module: language
+routes:
+  -
+    route_name: entity.configurable_language.edit_form
+tips:
+  language-edit-overview:
+    id: language-edit-overview
+    plugin: text
+    label: 'Diller Düzenleniyor'
+    weight: 1
+    body: '<p>Sitenizde yüklü bulunan özel diller de dahil dilleri bu bölümden düzenleyebilirsiniz.</p>'
+  language-edit-langcode:
+    id: language-edit-langcode
+    plugin: text
+    label: 'Dil kodu'
+    weight: 2
+    selector: '#edit-langcode-view'
+    body: '<p>Sistem tarafından dili izlemek için kullanıldığından, dilin sitedeki kodunu değiştiremezsiniz.</p>'
+  language-edit-label:
+    id: language-edit-label
+    plugin: text
+    label: 'Dil adı'
+    weight: 3
+    selector: '#edit-label'
+    body: '<p>Dilin İngilizce adı site genelinde tüm kullanıcılar için kullanılır. Gömülü dillerin adları Arayüz Çeviri modülü ile, gömülü ve özel dillerin adları Çeviri Yapılandırma modülü ile çevrilebilir.</p>'
+  language-edit-direction:
+    id: language-edit-direction
+    plugin: text
+    label: 'Dil yönü'
+    weight: 4
+    selector: '#edit-direction--wrapper--description'
+    body: '<p>Choose if the language is a "Left to right" or "Right to left" language.</p><p>Note that not all themes support "Right to left" layouts, so test your theme if you are using "Right to left".</p>'
+  language-edit-continue:
+    id: language-edit-continue
+    plugin: text
+    label: 'Devam ediliyor'
+    weight: 5
+    body: '<p>"Dili düzenleme" özelliği hakkında özet bilgileri aldığınıza göre şimdi şu işlemleri yapabilirsiniz:<ul><li>Dili düzenleme</li><li>Özel dil ekleme</li><li><a href="[site:url]/admin/config/regional/language">Ayarlanmış dilleri görüntüleme</a></li></ul></p>'

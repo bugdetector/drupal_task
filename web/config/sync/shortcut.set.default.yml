@@ -1,0 +1,8 @@
+uuid: a1a72076-1741-49b9-82b9-c7390c6751be
+langcode: tr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: U5VlGjd_SfV0Qm_EfnaynOfc549cNscFAx48JfYoMRI
+id: default
+label: Varsayılan

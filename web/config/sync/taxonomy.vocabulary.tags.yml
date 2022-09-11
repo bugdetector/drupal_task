@@ -1,0 +1,10 @@
+uuid: d2310fbd-e443-4410-a95f-ee86d85a25db
+langcode: tr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
+name: Etiketler
+vid: tags
+description: 'Benzer konulardaki yazıları kategoriler halinde gruplamak için etiketleri kullanın.'
+weight: 0

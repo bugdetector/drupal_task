@@ -1,0 +1,88 @@
+uuid: dd1275d6-7ee6-49ee-b258-3294d327d5ae
+langcode: tr
+status: true
+dependencies:
+  module:
+    - views_ui
+_core:
+  default_config_hash: XIYL1KF7ND2XQRa5AxvEcp8vgCN2kUGiuBNhCgxrPME
+id: views-ui
+label: 'Düzenleme sayfasını görüntüle'
+module: views_ui
+routes:
+  -
+    route_name: entity.view.edit_form
+  -
+    route_name: entity.view.edit_display_form
+tips:
+  views-main:
+    id: views-main
+    plugin: text
+    label: 'Görünüm ayarları yönetimi'
+    weight: 1
+    body: 'Yapılandırmaya bakın ve düzenleyin.'
+  views-ui-displays:
+    id: views-ui-displays
+    plugin: text
+    label: 'Bu görünümdeki gösterimler'
+    weight: 2
+    selector: '#views-display-top'
+    body: 'Bir gösterim sonuçların sayfa ya da blok gibi biçimlerde görüntülenmesini sağlar. Bir görünümde burada listelenen birden fazla gösterim bulunabilir. Etkin gösterim vurgulanmıştır.'
+  views-ui-view-admin:
+    id: views-ui-view-admin
+    plugin: text
+    label: 'Yönetimi görüntüle'
+    weight: 3
+    position: right
+    selector: '#views-display-extra-actions'
+    body: 'Bir açıklama eklemek ya da bir kopya oluşturmak gibi yönetim görevlerini yerine getirin. Kullanılabilecek seçenekleri görüntülemek için kutuyu açma düğmesine tıklayın.'
+  views-ui-format:
+    id: views-ui-format
+    plugin: text
+    label: 'Çıkış biçimi'
+    weight: 4
+    selector: .views-ui-display-tab-bucket.format
+    body: 'Sonuçların nasıl çıkarılacağını seçin. Örneğin her öğenin gösterim ayarlarınıza göre tam olarak görüntülenmesi için <em>İçerik</em> seçin. Her sonucun yalnızca belirli bir alanının görüntülenmesi için <em>Alanlar</em> seçin. Temel Drupal işlevselliğini <em>genişletmek</em> için modül yüklenerek ek biçimler kullanılabilir.'
+  views-ui-fields:
+    id: views-ui-fields
+    plugin: text
+    label: Alanlar
+    weight: 5
+    selector: .views-ui-display-tab-bucket.field
+    body: 'Bu görünümde alan kullanılıyorsa, bu bölümde görüntülenir. Bir alanın üzerine tıklayarak yapılandırabilirsiniz.'
+  views-ui-filter:
+    id: views-ui-filter
+    plugin: text
+    label: 'Görünümünüzü süzün'
+    weight: 6
+    selector: .views-ui-display-tab-bucket.filter
+    body: 'Çıktı sonuçlarını sınırlamak için süzgeçler ekleyin. Örneğin yalnızca <em>yayımlanmış</em> içeriklerin görüntülenmesi için <em>Yayımlanmış</em> ögeler için bir süzgeç ekleyin ve <em>Evet</em> olarak seçin.'
+  views-ui-filter-operations:
+    id: views-ui-filter-operations
+    plugin: text
+    label: 'Süzgeç eylemleri'
+    weight: 7
+    selector: '.views-ui-display-tab-bucket.filter .dropbutton-widget'
+    body: 'Süzgeçleri ekleyin, düzenleyin veya silin.'
+  views-ui-sorts:
+    id: views-ui-sorts
+    plugin: text
+    label: 'Sıralama Kriteri'
+    weight: 8
+    selector: .views-ui-display-tab-bucket.sort
+    body: 'Sonuçların çıktı sıralamasını denetleyin. Yapılandırmak için etkin bir sıralama kuralına tıklayın'
+  views-ui-sorts-operations:
+    id: views-ui-sorts-operations
+    plugin: text
+    label: 'Sıralama eylemleri'
+    weight: 9
+    selector: '.views-ui-display-tab-bucket.sort .dropbutton-widget'
+    body: 'Sıralama kuralı ekleyin, düzenleyin veya silin.'
+  views-ui-preview:
+    id: views-ui-preview
+    plugin: text
+    label: 'Ön izleme'
+    weight: 10
+    position: right
+    selector: '#preview-submit'
+    body: 'Görünüm çıktısının ön izlemesini göster.'
